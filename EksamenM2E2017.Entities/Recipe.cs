@@ -68,8 +68,7 @@ namespace EksamenM2E2017.Entities
 
         public override string ToString()
         {
-            //return $"{Name} can feed {persons} persons, and costs {GetPrice()} kr. to make.";
-            return name;
+            return $"{Name} can feed {persons} persons, and costs {GetPrice()} kr. to make.";
         }
     }
 }

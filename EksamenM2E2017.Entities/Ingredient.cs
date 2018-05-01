@@ -44,19 +44,31 @@ namespace EksamenM2E2017.Entities
         public decimal Price
         {
             get { return price; }
-            set { price = value; }
+            set {
+                if (value <= 0)
+                    throw new ArgumentException("Price needs to be a possitive number.");
+                price = value;
+            }
         }
 
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Name cannot be empty.");
+                name = value;
+            }
         }
 
         public IngredientType Type
         {
             get { return type; }
-            set { type = value; }
+            set {
+                if (Enum.IsDefined(typeof(IngredientType), value))
+                    throw new ArgumentException("Not a valid ingredient type");
+                type = value;
+            }
         }
 
         public override string ToString()

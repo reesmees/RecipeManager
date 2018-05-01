@@ -40,6 +40,26 @@ namespace EksamenM2E2017.DbAccess
             return recipe;
         }
 
+        public void InsertIngredient(Ingredient ingredient)
+        {
+            ExecuteNonQuery($"INSERT INTO Ingredients ([Name], Price, [Type]) VALUES ('{ingredient.Name}', {ingredient.Price}, '{ingredient.Type}')");
+        }
+
+        public void InsertRecipe(Recipe recipe)
+        {
+            ExecuteNonQuery($"INSERT INTO Recipes ([Name], Persons) VALUES ('{recipe.Name}', {recipe.Persons})");
+            Recipe r = GetRecipeByName(recipe.Name);
+            List<Ingredient> ingredients = new List<Ingredient>();
+            foreach (Ingredient i in recipe.Ingredients)
+            {
+                ingredients.Add(GetIngredientByName(i.Name));
+            }
+            foreach (Ingredient i in ingredients)
+            {
+                ExecuteNonQuery($"INSERT INTO RecipeVsIngredients (RecipeID, IngredientID) VALUES ({r.id}, {i.id})");
+            }
+        }
+
         public List<Ingredient> CreateIngredientsFromDataSet(DataSet data)
         {
             List<Ingredient> ingredients = new List<Ingredient>();
