@@ -52,5 +52,10 @@ namespace EksamenM2E2017.Opskrifter
 
             ListBoxRecipeList.ItemsSource = recipes;
         }
+
+        private void BtnAddNewRecipe_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
