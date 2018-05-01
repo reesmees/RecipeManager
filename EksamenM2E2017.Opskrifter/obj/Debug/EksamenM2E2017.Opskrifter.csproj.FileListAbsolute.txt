@@ -13,3 +13,27 @@ C:\Users\josa\Documents\Visual Studio 2017\Projects\EksamenM2E2017.Opskrifter\Ek
 C:\Users\josa\Documents\Visual Studio 2017\Projects\EksamenM2E2017.Opskrifter\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.csproj.CoreCompileInputs.cache
 C:\Users\josa\Documents\Visual Studio 2017\Projects\EksamenM2E2017.Opskrifter\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.exe
 C:\Users\josa\Documents\Visual Studio 2017\Projects\EksamenM2E2017.Opskrifter\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Opskrifter.exe.config
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Opskrifter.exe
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Opskrifter.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.DbAccess.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Entities.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Services.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.DbAccess.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Entities.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\EksamenM2E2017.Services.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.csprojResolveAssemblyReference.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\MainWindow.g.cs
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\App.g.cs
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter_MarkupCompile.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter_MarkupCompile.lref
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\MainWindow.baml
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.g.resources
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.Properties.Resources.resources
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.csproj.GenerateResource.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.csproj.CoreCompileInputs.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.csproj.CopyComplete
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.exe
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.pdb

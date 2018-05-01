@@ -1,0 +1,9 @@
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\bin\Debug\EksamenM2E2017.Services.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\bin\Debug\EksamenM2E2017.Services.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\obj\Debug\EksamenM2E2017.Services.csprojResolveAssemblyReference.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\obj\Debug\EksamenM2E2017.Services.csproj.CoreCompileInputs.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\obj\Debug\EksamenM2E2017.Services.csproj.CopyComplete
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\obj\Debug\EksamenM2E2017.Services.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Services\obj\Debug\EksamenM2E2017.Services.pdb

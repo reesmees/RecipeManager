@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using EksamenM2E2017.DbAccess;
+using EksamenM2E2017.Entities;
+using EksamenM2E2017.Services;
 
 namespace EksamenM2E2017.Opskrifter
 {
@@ -20,35 +23,22 @@ namespace EksamenM2E2017.Opskrifter
     /// </summary>
     public partial class MainWindow : Window
     {
+        public DBHandler handler;
+        public List<Ingredient> ingredients;
+        public List<Recipe> recipes;
+        public List<string> recipeNames;
         public MainWindow()
         {
             InitializeComponent();
-
-            List<TestIngredientClass> ingredients = new List<TestIngredientClass>();
-
-            ingredients.Add(new TestIngredientClass(IngredientType.Grøntsag, "Hvidkål", 15));
-            ingredients.Add(new TestIngredientClass(IngredientType.Fisk, "Torsk", 30));
-            ingredients.Add(new TestIngredientClass(IngredientType.Oksekød, "Oksefars", 35));
-            ingredients.Add(new TestIngredientClass(IngredientType.Grøntsag, "Tomat", 15));
-            ingredients.Add(new TestIngredientClass(IngredientType.Mejeriprodukter, "Ost", 10));
-            ingredients.Add(new TestIngredientClass(IngredientType.Grøntsag, "Chili", 11));
-            ingredients.Add(new TestIngredientClass(IngredientType.Mel, "Hvedemel", 20));
-            ingredients.Add(new TestIngredientClass(IngredientType.Mejeriprodukter, "Gær", 20));
-            ingredients.Add(new TestIngredientClass(IngredientType.Mejeriprodukter, "Mælk", 12));
-            ingredients.Add(new TestIngredientClass(IngredientType.Kolonial, "Sukker", 30));
-            
+            handler = new DBHandler(@"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = EksamenM2E2017.OpskrifterDB; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False");
+            ingredients = handler.GetAllIngredients();
+            recipes = handler.GetAllRecipes();
+            recipeNames = new List<string>();
+            foreach (Recipe r in recipes)
+            {
+                recipeNames.Add(r.Name);
+            }
             DtgAllIngredients.ItemsSource = ingredients;
-
-            List<TestRecipeClass> recipes = new List<TestRecipeClass>();
-
-            List<TestIngredientClass> brød = new List<TestIngredientClass>();
-
-            brød.Add(ingredients[9]);
-            brød.Add(ingredients[8]);
-            brød.Add(ingredients[7]);
-            brød.Add(ingredients[6]);
-
-            recipes.Add(new TestRecipeClass(brød, "Brød"));
 
             ListBoxRecipeList.ItemsSource = recipes;
         }
@@ -56,6 +46,14 @@ namespace EksamenM2E2017.Opskrifter
         private void BtnAddNewRecipe_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ListBoxRecipeList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Recipe r = (Recipe)ListBoxRecipeList.SelectedItem;
+            DtgIngredientsInSelectedRecipe.ItemsSource = r.Ingredients;
+            TxtBoxPersons.Text = r.Persons.ToString();
+            TxtBoxPrice.Text = r.GetPrice().ToString();
         }
     }
 }

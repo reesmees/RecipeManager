@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("EksamenM2E2017.ApiAccess")]
+[assembly: AssemblyTitle("EksamenM2E2017.Services")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("EksamenM2E2017.ApiAccess")]
+[assembly: AssemblyProduct("EksamenM2E2017.Services")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1e955ac1-9785-412d-a3cf-c8ea33f1659d")]
+[assembly: Guid("8e28790d-aeca-4ae5-b1e1-cde32c57ef79")]
 
 // Version information for an assembly consists of the following four values:
 //

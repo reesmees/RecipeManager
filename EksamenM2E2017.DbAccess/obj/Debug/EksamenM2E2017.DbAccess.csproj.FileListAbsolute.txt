@@ -1,0 +1,9 @@
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\bin\Debug\EksamenM2E2017.DbAccess.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\bin\Debug\EksamenM2E2017.DbAccess.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\bin\Debug\EksamenM2E2017.Entities.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\bin\Debug\EksamenM2E2017.Entities.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\obj\Debug\EksamenM2E2017.DbAccess.csprojResolveAssemblyReference.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\obj\Debug\EksamenM2E2017.DbAccess.csproj.CoreCompileInputs.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\obj\Debug\EksamenM2E2017.DbAccess.csproj.CopyComplete
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\obj\Debug\EksamenM2E2017.DbAccess.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.DbAccess\obj\Debug\EksamenM2E2017.DbAccess.pdb

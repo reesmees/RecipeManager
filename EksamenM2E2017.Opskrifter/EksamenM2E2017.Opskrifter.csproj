@@ -96,10 +96,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EksamenM2E2017.ApiAccess\EksamenM2E2017.ApiAccess.csproj">
-      <Project>{1e955ac1-9785-412d-a3cf-c8ea33f1659d}</Project>
-      <Name>EksamenM2E2017.ApiAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\EksamenM2E2017.DbAccess\EksamenM2E2017.DbAccess.csproj">
       <Project>{759cfde6-8885-4482-8032-22356c447f24}</Project>
       <Name>EksamenM2E2017.DbAccess</Name>
@@ -107,6 +103,10 @@
     <ProjectReference Include="..\EksamenM2E2017.Entities\EksamenM2E2017.Entities.csproj">
       <Project>{194f2cda-45eb-48c8-8435-d40626177f67}</Project>
       <Name>EksamenM2E2017.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EksamenM2E2017.Services\EksamenM2E2017.Services.csproj">
+      <Project>{8e28790d-aeca-4ae5-b1e1-cde32c57ef79}</Project>
+      <Name>EksamenM2E2017.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

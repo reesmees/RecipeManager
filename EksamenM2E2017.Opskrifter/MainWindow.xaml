@@ -14,7 +14,7 @@
                         <ColumnDefinition Width="321*"/>
                         <ColumnDefinition Width="259*"/>
                     </Grid.ColumnDefinitions>
-                    <ListBox x:Name="ListBoxRecipeList" HorizontalAlignment="Left" Height="271" Margin="10,41,0,0" VerticalAlignment="Top" Width="188">
+                    <ListBox x:Name="ListBoxRecipeList" HorizontalAlignment="Left" Height="271" Margin="10,41,0,0" VerticalAlignment="Top" Width="188" SelectionChanged="ListBoxRecipeList_SelectionChanged">
 
                     </ListBox>
                     <Label Content="Opskrifter:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
@@ -24,8 +24,8 @@
                             <Label Content="Personer:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="100" HorizontalContentAlignment="Right"/>
                             <Label Content="Ingredienser:" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Width="100"/>
                             <DataGrid x:Name="DtgIngredientsInSelectedRecipe" HorizontalAlignment="Left" Height="147" Margin="10,93,0,0" VerticalAlignment="Top" Width="326" IsReadOnly="True"/>
-                            <TextBox x:Name="TxtBoxPersons" HorizontalAlignment="Left" Height="23" Margin="115,39,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" VerticalContentAlignment="Center"/>
-                            <TextBox x:Name="TxtBoxPrice" HorizontalAlignment="Left" Height="24" Margin="115,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="221" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="TxtBoxPersons" HorizontalAlignment="Left" Height="24" Margin="115,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" VerticalContentAlignment="Center"/>
+                            <TextBox x:Name="TxtBoxPrice" HorizontalAlignment="Left" Height="24" Margin="115,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="221" VerticalContentAlignment="Center"/>
                         </Grid>
                     </GroupBox>
                 </Grid>

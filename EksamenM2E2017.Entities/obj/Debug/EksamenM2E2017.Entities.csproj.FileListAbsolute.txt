@@ -1,0 +1,6 @@
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\bin\Debug\EksamenM2E2017.Entities.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\bin\Debug\EksamenM2E2017.Entities.pdb
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\obj\Debug\EksamenM2E2017.Entities.csprojResolveAssemblyReference.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\obj\Debug\EksamenM2E2017.Entities.csproj.CoreCompileInputs.cache
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\obj\Debug\EksamenM2E2017.Entities.dll
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Entities\obj\Debug\EksamenM2E2017.Entities.pdb
