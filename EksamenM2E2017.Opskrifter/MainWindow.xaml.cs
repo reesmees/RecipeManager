@@ -24,8 +24,8 @@ namespace EksamenM2E2017.Opskrifter
     public partial class MainWindow : Window
     {
         public DBHandler handler;
-        public Recipe newRecipe;
         public List<Ingredient> ingredients;
+        public List<Ingredient> ingredientsInNewRecipe;
         public List<Recipe> recipes;
         public List<string> recipeNames;
         public MainWindow()
@@ -35,14 +35,14 @@ namespace EksamenM2E2017.Opskrifter
             ingredients = handler.GetAllIngredients();
             recipes = handler.GetAllRecipes();
             recipeNames = new List<string>();
-            newRecipe = new Recipe("Placeholder", new List<Ingredient>(), 0);
+            ingredientsInNewRecipe = new List<Ingredient>();
             foreach (Recipe r in recipes)
             {
                 recipeNames.Add(r.Name);
             }
             DtgAllIngredients.ItemsSource = ingredients;
             DtgAddIngredients.ItemsSource = ingredients;
-            DtgItemsInNewRecipe.ItemsSource = newRecipe.Ingredients;
+            DtgItemsInNewRecipe.ItemsSource = ingredientsInNewRecipe;
             ListBoxRecipeList.ItemsSource = recipeNames;
             CmbBoxIngredientTypes.ItemsSource = Enum.GetValues(typeof(IngredientType)).Cast<IngredientType>();
         }
@@ -51,8 +51,8 @@ namespace EksamenM2E2017.Opskrifter
         {
             Recipe r = recipes.Find(x => x.Name.Equals(ListBoxRecipeList.SelectedItem.ToString()));
             DtgIngredientsInSelectedRecipe.ItemsSource = r.Ingredients;
-            TxtBoxPersons.Text = r.Persons.ToString();
-            TxtBoxPrice.Text = r.GetPrice().ToString();
+            TxtBlkPersons.Text = r.Persons.ToString();
+            TxtBlkPrice.Text = r.GetPrice().ToString();
         }
 
         private void BtnAddIngredient_Click(object sender, RoutedEventArgs e)
@@ -92,15 +92,15 @@ namespace EksamenM2E2017.Opskrifter
             {
                 MessageBox.Show("Please select an ingredient to add to the recipe.");
             }
-            else if (newRecipe.Ingredients.Exists(x => x.Equals(DtgAllIngredients.SelectedItem)))
+            else if (ingredientsInNewRecipe.Exists(x => x.Equals(DtgAllIngredients.SelectedItem)))
             {
                 MessageBox.Show("You cannot add the same ingredient multiple times.");
             }
             else
             {
-                newRecipe.Ingredients.Add((Ingredient)DtgAllIngredients.SelectedItem);
+                ingredientsInNewRecipe.Add((Ingredient)DtgAllIngredients.SelectedItem);
                 DtgItemsInNewRecipe.Items.Refresh();
-                LblTotalPrice.Content = newRecipe.GetPrice();
+                LblTotalPrice.Content = CalculatePrice(ingredientsInNewRecipe);
             }
         }
 
@@ -112,41 +112,42 @@ namespace EksamenM2E2017.Opskrifter
             }
             else
             {
-                newRecipe.Ingredients.Remove((Ingredient)DtgItemsInNewRecipe.SelectedItem);
+                ingredientsInNewRecipe.Remove((Ingredient)DtgItemsInNewRecipe.SelectedItem);
                 DtgItemsInNewRecipe.Items.Refresh();
-                LblTotalPrice.Content = newRecipe.GetPrice();
+                LblTotalPrice.Content = CalculatePrice(ingredientsInNewRecipe);
             }
         }
 
         private void BtnAddNewRecipe_Click(object sender, RoutedEventArgs e)
         {
-            if (String.IsNullOrWhiteSpace(TxtBoxRecipeName.Text))
+            
+            try
             {
-                MessageBox.Show("Please enter the name of the recipe.");
+                string newRecipeName = TxtBoxRecipeName.Text;
+                int newRecipePersons = int.Parse(TxtBoxCountOfPersonsInRecipe.Text);
+                Recipe newRecipe = new Recipe(newRecipeName, ingredientsInNewRecipe, newRecipePersons);
+                handler.InsertRecipe(newRecipe);
+                ingredientsInNewRecipe.Clear();
+                DtgItemsInNewRecipe.Items.Refresh();
+                TxtBoxCountOfPersonsInRecipe.Clear();
+                TxtBoxRecipeName.Clear();
+                LblTotalPrice.Content = CalculatePrice(ingredientsInNewRecipe);
+                UpdateSources();
             }
-            else if (String.IsNullOrWhiteSpace(TxtBoxCountOfPersonsInRecipe.Text))
+            catch (Exception ex)
             {
-                MessageBox.Show("Please enter how many people the recipe will feed.");
+                MessageBox.Show($"An error has occured.{Environment.NewLine}{Environment.NewLine}{ex.Message}");
             }
-            else
+        }
+
+        public decimal CalculatePrice(List<Ingredient> ingredients)
+        {
+            decimal price = 0;
+            foreach (Ingredient i in ingredients)
             {
-                try
-                {
-                    newRecipe.Name = TxtBoxRecipeName.Text;
-                    newRecipe.Persons = int.Parse(TxtBoxCountOfPersonsInRecipe.Text);
-                    handler.InsertRecipe(newRecipe);
-                    newRecipe = new Recipe("Placeholder", new List<Ingredient>(), 0);
-                    DtgItemsInNewRecipe.ItemsSource = newRecipe.Ingredients;
-                    TxtBoxCountOfPersonsInRecipe.Clear();
-                    TxtBoxRecipeName.Clear();
-                    LblTotalPrice.Content = newRecipe.GetPrice();
-                    UpdateSources();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error has occured.{Environment.NewLine}{Environment.NewLine}{ex.Message}");
-                }
+                price += i.Price;
             }
+            return price;
         }
     }
 }

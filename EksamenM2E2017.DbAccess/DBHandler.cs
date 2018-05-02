@@ -47,6 +47,8 @@ namespace EksamenM2E2017.DbAccess
 
         public void InsertRecipe(Recipe recipe)
         {
+            if (recipe.Ingredients.Count() < 1)
+                throw new ArgumentException("A recipe cannot have less than one ingredient.");
             ExecuteNonQuery($"INSERT INTO Recipes ([Name], Persons) VALUES ('{recipe.Name}', {recipe.Persons})");
             Recipe r = GetRecipeByName(recipe.Name);
             List<Ingredient> ingredients = new List<Ingredient>();
@@ -101,6 +103,11 @@ namespace EksamenM2E2017.DbAccess
                     Ingredient ingredient = new Ingredient(price, name, type, ingredientID);
                     recipes.Find(x => x.id.Equals(recipeID)).Ingredients.Add(ingredient);
                 }
+            }
+            foreach (Recipe r in recipes)
+            {
+                if (r.Ingredients.Count() < 1)
+                    recipes.Remove(r);
             }
             return recipes;
         }

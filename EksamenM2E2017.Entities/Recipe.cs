@@ -31,13 +31,23 @@ namespace EksamenM2E2017.Entities
         public int Persons
         {
             get { return persons; }
-            set { persons = value; }
+            set {
+                if (value < 1)
+                    throw new ArgumentException("A recipe cannot feed less than one person.");
+                persons = value;
+            }
         }
 
         public string Name
         {
             get { return name; }
-            set { name = value; }
+            set {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("A recipe cannot be unnamed.");
+                if (value.Contains("'"))
+                    throw new ArgumentException("A recipe name cannot contain the ' character.");
+                name = value;
+            }
         }
 
         public List<Ingredient> Ingredients

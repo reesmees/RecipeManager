@@ -65,7 +65,7 @@ namespace EksamenM2E2017.Entities
         {
             get { return type; }
             set {
-                if (Enum.IsDefined(typeof(IngredientType), value))
+                if (!Enum.IsDefined(typeof(IngredientType), value))
                     throw new ArgumentException("Not a valid ingredient type");
                 type = value;
             }
