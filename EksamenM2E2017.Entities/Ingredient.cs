@@ -17,7 +17,8 @@ namespace EksamenM2E2017.Entities
         Rice,
         Pasta,
         Conserves,
-        Mushroom
+        Mushroom,
+        Legume
     }
     public class Ingredient
     {

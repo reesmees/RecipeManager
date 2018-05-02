@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksamenM2E2017.DbAccess", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksamenM2E2017.Services", "EksamenM2E2017.Services\EksamenM2E2017.Services.csproj", "{8E28790D-AECA-4AE5-B1E1-CDE32C57EF79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EksamenM2E2017.EntitiesTests", "EksamenM2E2017.EntitiesTests\EksamenM2E2017.EntitiesTests.csproj", "{885C2EF7-5429-4DD4-8326-B045063D4898}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8E28790D-AECA-4AE5-B1E1-CDE32C57EF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E28790D-AECA-4AE5-B1E1-CDE32C57EF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E28790D-AECA-4AE5-B1E1-CDE32C57EF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885C2EF7-5429-4DD4-8326-B045063D4898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885C2EF7-5429-4DD4-8326-B045063D4898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885C2EF7-5429-4DD4-8326-B045063D4898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885C2EF7-5429-4DD4-8326-B045063D4898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -41,7 +41,8 @@
                     <TextBox x:Name="TxtBoxIngredientName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="288,82,0,0"/>
                     <TextBox x:Name="TxtBoxIngredientPrice" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="288,113,0,0"/>
                     <ComboBox x:Name="CmbBoxIngredientTypes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="288,143,0,0"/>
-                    <Button x:Name="BtnAddIngredient" Content="Add new ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="288,175,0,0" Click="BtnAddIngredient_Click"/>
+                    <Button x:Name="BtnAddIngredient" Content="Add new ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="288,175,0,0" Click="BtnAddIngredient_Click" Height="23"/>
+                    <Button x:Name="BtnIngredientSummary" Content="Get ingredient summary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="135" Margin="413,82,0,0" Click="BtnIngredientSummary_Click" Height="23"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="TabNewRecipe" Header="New Recipe">

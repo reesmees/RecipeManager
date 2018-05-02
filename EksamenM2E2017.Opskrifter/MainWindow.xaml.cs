@@ -149,5 +149,20 @@ namespace EksamenM2E2017.Opskrifter
             }
             return price;
         }
+
+        private void BtnIngredientSummary_Click(object sender, RoutedEventArgs e)
+        {
+            IngredientSummary summary = new IngredientSummary(TxtBoxIngredientName.Text);
+            if (string.IsNullOrWhiteSpace(summary.TxtBlkSummary.Text))
+            {
+                MessageBox.Show("Could not find ingredient description; please check your spelling and try again.");
+                summary.Show();
+                summary.Close();
+            }
+            else
+            {
+                summary.ShowDialog();
+            }
+        }
     }
 }
