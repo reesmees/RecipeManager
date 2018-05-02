@@ -65,6 +65,7 @@ namespace EksamenM2E2017.Opskrifter
                 TxtBoxIngredientName.Clear();
                 TxtBoxIngredientPrice.Clear();
                 CmbBoxIngredientTypes.SelectedItem = null;
+                
             }
             catch (Exception ex)
             {
@@ -180,6 +181,20 @@ namespace EksamenM2E2017.Opskrifter
                     handler.DeleteIngredient((Ingredient)DtgAddIngredients.SelectedItem);
                     UpdateSources();
                 }
+            }
+        }
+
+        private void BtnUpdateIngredient_Click(object sender, RoutedEventArgs e)
+        {
+            if (DtgAddIngredients.SelectedItem == null)
+            {
+                MessageBox.Show("Please choose an ingredient to update.");
+            }
+            else
+            {
+                UpdateIngredient updateIngredient = new UpdateIngredient((Ingredient)DtgAddIngredients.SelectedItem, handler);
+                updateIngredient.ShowDialog();
+                UpdateSources();
             }
         }
     }

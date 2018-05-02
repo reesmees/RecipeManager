@@ -67,6 +67,11 @@ namespace EksamenM2E2017.DbAccess
             ExecuteNonQuery($"DELETE FROM Ingredients WHERE ID={ingredient.id}");
         }
 
+        public void UpdateIngredient(Ingredient ingredient)
+        {
+            ExecuteNonQuery($"UPDATE Ingredients SET [Name]='{ingredient.Name}', [Type]='{ingredient.Type}', Price={ingredient.Price} WHERE ID={ingredient.id}");
+        }
+
         public List<Ingredient> CreateIngredientsFromDataSet(DataSet data)
         {
             List<Ingredient> ingredients = new List<Ingredient>();

@@ -34,16 +34,17 @@
                 <Grid Background="#FEFEFE">
                     <Label Content="Ingredients:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,16,0,0"/>
                     <DataGrid x:Name="DtgAddIngredients" HorizontalAlignment="Left" Height="265" VerticalAlignment="Top" Width="279" Margin="16,47,0,0"/>
-                    <Label Content="New ingredient:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="300,47,0,0"/>
+                    <Label Content="New ingredient:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="370,47,0,0"/>
                     <Label Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,77,0,0" HorizontalContentAlignment="Right"/>
                     <Label Content="Price:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="406,110,0,0" HorizontalContentAlignment="Right"/>
                     <Label Content="Type:" HorizontalAlignment="Left" Margin="408,140,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
                     <TextBox x:Name="TxtBoxIngredientName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="450,80,0,0"/>
                     <TextBox x:Name="TxtBoxIngredientPrice" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="450,113,0,0"/>
                     <ComboBox x:Name="CmbBoxIngredientTypes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,143,0,0"/>
-                    <Button x:Name="BtnAddIngredient" Content="Add new ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,217,0,0" Click="BtnAddIngredient_Click" Height="23"/>
-                    <Button x:Name="BtnIngredientSummary" Content="Ingredient summary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,179,0,0" Click="BtnIngredientSummary_Click" Height="23"/>
+                    <Button x:Name="BtnAddIngredient" Content="Add new ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,171,0,0" Click="BtnAddIngredient_Click" Height="23"/>
+                    <Button x:Name="BtnIngredientSummary" Content="Ingredient summary" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="450,199,0,0" Click="BtnIngredientSummary_Click" Height="23"/>
                     <Button x:Name="BtnDeleteIngredient" Content="Delete ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="300,289,0,0" Click="BtnDeleteIngredient_Click" Height="23"/>
+                    <Button x:Name="BtnUpdateIngredient" Content="Update ingredient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="300,261,0,0" Click="BtnUpdateIngredient_Click" Height="23"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="TabNewRecipe" Header="New Recipe">

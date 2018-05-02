@@ -39,3 +39,5 @@ C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\Eksa
 C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\EksamenM2E2017.Opskrifter.pdb
 C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\IngredientSummary.g.cs
 C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\IngredientSummary.baml
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\UpdateIngredient.g.cs
+C:\Users\rasm653p\Desktop\RecipeManager\EksamenM2E2017.Opskrifter\obj\Debug\UpdateIngredient.baml
