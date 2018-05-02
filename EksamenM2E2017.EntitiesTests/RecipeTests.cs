@@ -28,6 +28,7 @@ namespace EksamenM2E2017.Entities.Tests
             Assert.AreEqual("Tomato soup", recipe.Name);
             Assert.AreEqual("Chopped tomatoes", recipe.Ingredients[0].Name);
             Assert.AreEqual(23.25m, recipe.GetPrice());
+            Assert.AreEqual(11.625m, recipe.GetPricePerPerson());
         }
 
         [TestMethod][ExpectedException(typeof(ArgumentException))]

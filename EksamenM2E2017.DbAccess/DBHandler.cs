@@ -62,6 +62,11 @@ namespace EksamenM2E2017.DbAccess
             }
         }
 
+        public void DeleteIngredient(Ingredient ingredient)
+        {
+            ExecuteNonQuery($"DELETE FROM Ingredients WHERE ID={ingredient.id}");
+        }
+
         public List<Ingredient> CreateIngredientsFromDataSet(DataSet data)
         {
             List<Ingredient> ingredients = new List<Ingredient>();

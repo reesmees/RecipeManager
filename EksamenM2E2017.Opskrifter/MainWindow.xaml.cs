@@ -164,5 +164,23 @@ namespace EksamenM2E2017.Opskrifter
                 summary.ShowDialog();
             }
         }
+
+        private void BtnDeleteIngredient_Click(object sender, RoutedEventArgs e)
+        {
+            if (DtgAddIngredients.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an ingredient to delete.");
+            }
+            else
+            {
+                Ingredient i = (Ingredient)DtgAddIngredients.SelectedItem;
+                MessageBoxResult result = MessageBox.Show($"Are you sure you wish to delete {i.Name} from the database?", "Confirmation", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    handler.DeleteIngredient((Ingredient)DtgAddIngredients.SelectedItem);
+                    UpdateSources();
+                }
+            }
+        }
     }
 }

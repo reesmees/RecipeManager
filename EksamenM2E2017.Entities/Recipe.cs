@@ -76,6 +76,11 @@ namespace EksamenM2E2017.Entities
             return price;
         }
 
+        public decimal GetPricePerPerson()
+        {
+            return GetPrice() / persons;
+        }
+
         public override string ToString()
         {
             return $"{Name} can feed {persons} persons, and costs {GetPrice()} kr. to make.";
